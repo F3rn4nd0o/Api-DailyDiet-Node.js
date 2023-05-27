@@ -2,7 +2,9 @@ import { knex as setupKnex, Knex } from 'knex'
 import { env } from './env'
 
 export const config: Knex.Config = {
-  client: env.DATABASE_CLIENT,
+  client: env.DATABASE_CLIENT === 'sqlite' ? {
+    filename: env.DATABASE_URL,
+  } : env.DATABASE_URL
   connection: {
     filename: env.DATABASE_URL,
   },

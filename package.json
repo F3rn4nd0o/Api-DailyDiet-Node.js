@@ -13,6 +13,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.17.0",
+    "knex": "^2.4.2",
+    "pg": "^8.11.0",
+    "zod": "^3.21.4"
+  },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
     "@types/node": "^20.2.3",
@@ -21,16 +29,8 @@
     "supertest": "^6.3.3",
     "tsup": "^6.7.0",
     "tsx": "^3.12.7",
+    "sqlite3": "^5.1.6",
     "typescript": "^5.0.4",
     "vitest": "^0.31.1"
   },
-  "dependencies": {
-    "@fastify/cookie": "^8.3.0",
-    "dotenv": "^16.0.3",
-    "fastify": "^4.17.0",
-    "knex": "^2.4.2",
-    "pg": "^8.11.0",
-    "sqlite3": "^5.1.6",
-    "zod": "^3.21.4"
-  }
 }
